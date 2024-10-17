@@ -1,0 +1,228 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+.logo2{
+  height:100px
+}
+#main-visual{
+ position: relative;
+}
+#main-message {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100%;
+}
+
+#main-message>h1{
+  color: #f3f3f3f1;
+  font-size: 40px;
+}
+#main-message>h2{
+  color: #f3f3f3f1;
+  font-size: 30px;
+}
+#main{
+  width: 100%;
+}
+#about{
+  margin: 10px;
+}
+.title{
+  text-align: center; 
+  font-size: 30px;
+}
+#product3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productparts{
+  width: 25%;
+  text-align: center;
+  margin:10px 10px 10px 10px
+}
+.productphoto{
+  width: 100%;
+}
+#product3>p{
+  font-size: 20px;
+  text-align: left;
+}
+.more{
+ font-weight:bold;
+ font-size: 24px;
+ border: 4px solid #0f0f0f;
+ border-radius: 10px;
+ width:200px ;
+ margin: 20px auto 40px auto;
+}
+#product{
+  border-bottom: 4px solid #95e6b9;
+}
+#news{
+  border-bottom: 4px solid #95e6b9;
+}
+.mailmore{
+  font-weight:bold;
+  font-size: 24px;
+  border: 4px solid #0f0f0f;
+  border-radius: 10px;
+  width:400px ;
+  margin: 20px auto 40px auto;
+ }
+ table{
+  text-align:left;
+  margin:auto;
+ }
+ #address{
+  display: flex;
+ }
+/*画面幅が760px以上のとき*/
+@media screen and (min-width: 760px){
+/* ヘッダー */
+header {
+  display: flex;
+}
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  font-size: 20px;
+  padding-top: 15px;
+  margin-left: 60px;
+}
+
+/* ナビゲーションのリンクの下線を消す */
+#nav-pc>a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nav-pc>a:link {
+  color: #13db7e;
+}
+
+#nav-pc>a:visited {
+  color:#13db7e;
+}
+
+#nav-pc>a:hover {
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+#nav-pc>a:active {
+  color: #0d0d0d;
+}
+  /* スマホ用ナビを非表示 */
+   #nav-sp,
+   #menu-sp {
+     display: none;
+   }
+}
+/*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+    body {
+      min-width: 375px;
+      margin: 0;
+    }
+    /* PC用ナビゲーション非表示 */
+    #nav-pc {
+      display: none;
+    }
+        /* ハンバーガーメニュー */
+    #menu-sp {
+      float: right;
+      padding: 0;
+      height:50px;
+    }
+     /* スマホ用ナビゲーションの表示切替 */
+     /* 初期状態、レイアウトと非表示設定 */
+     #nav-sp {
+      background-color: #8aebb2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 40%;
+      width: 40%;
+      display: none;
+      z-index: 100;
+    }
+         /* ×ボタン */
+   #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+   /* ナビゲーションのリンクの装飾設定 */
+   #nav-sp > a {
+     display: block;/* 要素を縦に並べる */
+   }
+   #nav-sp > a:link {
+     color: #ffffff;
+   }
+   #nav-sp > a:visited {
+     color: #ffffff;
+   }
+   #nav-sp > a:hover {
+     color: #ffffff;
+     text-decoration: underline;
+   }
+   #nav-sp > a:active {
+     color: #ffffff;
+   }
+   #nav-sp > .menu {
+     text-decoration: none;
+     display: block;
+     margin: 0 20px 0 20px;
+     height: 44px;
+     font-size: 16px;
+     background-image: url("images/arrow.png");
+     background-repeat: no-repeat;
+     background-position: right top;
+   }
+  #logo2-sp{
+    height:60px;
+  }
+  #main{
+    width: 100%;
+  }
+  main-message {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+  }
+  
+  #main-message>h1{
+    color: #f3f3f3f1;
+    font-size: 20px;
+  }
+  #main-message>h2{
+    color: #f3f3f3f1;
+    font-size: 20px;
+  }
+  p{
+    font-size: 13px;
+  }
+  #address{
+    font-size: 10px;
+  }
+  .logo2{
+    height:50px
+  }
