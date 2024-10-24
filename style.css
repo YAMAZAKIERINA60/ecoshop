@@ -1,0 +1,384 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+.logo2{
+  height:100px
+}
+#main-visual{
+ position: relative;/* 親要素のdivを基準にsectionを基準にするとできないので注意 */
+ max-width:1000px;
+ margin: 0 auto;
+}
+#main-sentence {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#main-sentence>h1{
+  color: #f3f3f3f1;
+  font-size: 40px;
+}
+#main-sentence>h2{
+  color: #f3f3f3f1;
+  font-size: 30px;
+}
+
+#mainphoto{
+  width: 100%;
+}
+#about{
+  margin: 10px auto;
+  text-align: center;
+}
+#aboutmessage{
+  margin: 10px auto;
+  max-width:1000px;
+}
+#aboutmessage>p{
+  text-align: left;
+}
+.title{
+  text-align: center; 
+  font-size: 30px;
+}
+.product3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.productparts{
+  width: 25%;
+  margin:10px 10px 10px 10px
+}
+.productparts>p{
+  text-align: left;
+}
+.productphoto{
+  width: 100%;
+}
+.product3>p{
+  font-size: 20px;
+  text-align: left;
+}
+.more{
+ font-weight:bold;
+ font-size: 24px;
+ border: 4px solid #0f0f0f;
+ border-radius: 10px;
+ width:200px ;
+ text-align: center;
+ margin: 20px auto 50px auto;
+ text-decoration: none;
+ color: #0d0d0d;
+}
+#product{
+  border-bottom: 4px solid #95e6b9;
+  text-align: center;
+  padding: 20px;
+}
+#news{
+  border-bottom: 4px solid #95e6b9;
+}
+.mailmore{
+  font-weight:bold;
+  font-size: 24px;
+  border: 4px solid #0f0f0f;
+  border-radius: 10px;
+  width:400px ;
+  margin: 20px auto 40px auto;
+  text-decoration: none;
+  color: #0d0d0d;
+ }
+ #contact{
+  text-align: center;
+ }
+ #address{
+  margin: 50px auto 50px auto;
+ }
+ table{
+  text-align:left;
+  margin:auto;
+ }
+ #address{
+  display: flex;
+ }
+/*about*/
+.aboutflex{
+  display: flex;
+  justify-content: center;
+  margin:100px auto 100px;
+}
+.aboutsentence>p{
+  text-align:left;
+}
+#aboutphoto{
+  padding-right:40px ;
+  max-height:350px;
+}
+#aboutphoto2{
+  padding-left:40px ;
+  max-height:350px;
+}
+#abouttheme{
+  border-bottom: 4px solid #95e6b9;
+}
+
+/*product*/
+#Product{
+  border-bottom: 4px solid #95e6b9;
+}
+.buy{
+  font-weight:bold;
+  font-size: 16px;
+  border: 4px solid #518f66;
+  background-color: #518f66;
+  border-radius: 10px;
+  width:400px ;
+  margin: 20px auto 100px auto;
+  text-decoration: none;
+  color: #fafafa;
+ }
+ #Productsentence{
+  margin: 10px auto;
+  max-width:1000px;
+}
+
+#Productsentence>p{
+ text-align: left;
+}
+#beauty{
+  border-top: 4px solid #95e6b9;
+}
+#fashion{
+  border-top: 4px solid #95e6b9;
+  border-bottom: 4px solid #95e6b9;
+}
+
+/* お問い合わせ */
+#Contact {
+  margin: 80px auto 80px auto;
+}
+form{
+  text-align: center;
+  border-top: 4px solid #95e6b9;
+  border-bottom: 4px solid #95e6b9;
+}
+
+/* 外枠 */
+#Contact>form>div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 400px;
+  height: 56px;
+}
+
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 400px;
+  height: 200px;
+}
+
+
+
+/*画面幅が760px以上のとき*/
+@media screen and (min-width: 760px){
+/* ヘッダー */
+header {
+  display: flex;
+}
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  font-size: 20px;
+  padding-top: 15px;
+  margin-left: 60px;
+}
+
+/* ナビゲーションのリンクの下線を消す */
+#nav-pc>a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nav-pc>a:link {
+  color: #13db7e;
+}
+
+#nav-pc>a:visited {
+  color:#13db7e;
+}
+#nav-pc>a:hover {
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+#nav-pc>a:active {
+  color: #0d0d0d;
+}
+  /* スマホ用ナビを非表示 */
+   #nav-sp,
+   #menu-sp {
+     display: none;
+   }
+}
+/*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+    body {
+      margin: 0;
+    }
+    /* PC用ナビゲーション非表示 */
+    #nav-pc {
+      display: none;
+    }
+        /* ハンバーガーメニュー */
+    #menu-sp {
+      float: right;
+      padding: 0;
+      height:50px;
+    }
+     /* スマホ用ナビゲーションの表示切替 */
+     /* 初期状態、レイアウトと非表示設定 */
+     #nav-sp {
+      background-color: #8aebb2;
+      position: fixed;/* スクロールしても固定 */
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
+    }
+         /* ×ボタン */
+   #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+   /* ナビゲーションのリンクの装飾設定 */
+   #nav-sp > a {
+     display: block;/* 要素を縦に並べる */
+   }
+   #nav-sp > a:link {
+     color: #ffffff;
+   }
+   #nav-sp > a:visited {
+     color: #ffffff;
+   }
+   #nav-sp > a:hover {
+     color: #ffffff;
+     text-decoration: underline;
+   }
+   #nav-sp > a:active {
+     color: #ffffff;
+   }
+   #nav-sp > .menu {
+     text-decoration: none;
+     display: block;
+     margin: 0 20px 0 20px;
+     height: 44px;
+     font-size: 16px;
+     background-image: url("images/arrow.png");
+     background-repeat: no-repeat;
+     background-position: right top;
+   }
+  #logo2-sp{
+    height:60px;
+  }
+  #main{
+    width: 100%;
+  }
+  #main-sentence {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+  }
+  
+  #main-sentence>h1{
+    color: #f3f3f3f1;
+    font-size: 20px;
+  }
+  #main-sentence>h2{
+    color: #f3f3f3f1;
+    font-size: 16px;
+  }
+  .logo2{
+    height:50px
+  }
+  #main-sentence {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  #product3{
+    display: block;
+    flex-wrap: wrap;
+  }
+  .productparts{
+    width: 100%;
+    max-width: 400px;
+    margin:20px auto 20px;
+  }
+  .aboutflex{
+    display: block;
+    margin:auto ;
+  }
+  .aboutsentence{
+    margin:10px 30px 10px 30px;
+  }
+  #aboutphoto{
+    max-height:350px;
+    padding:0 ;
+  }
+  #aboutphoto2{
+    max-height:350px;
+    padding:0 ;
+  }
+  }

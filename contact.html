@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eco Shop</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="自然由来のオーガニック成分を活用し、お肌に優しいケアを提供しながら、地球にも優しい
+      選択をお届けします。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="home.html" class="logo2"><img class="logo2"src= "images/logo2.jpg" alt="トップページに戻る"/></a>
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="News.html">News</a>
+        <a href="contact.html">Contact</a>
+            <!-- スマホ用メニューボタン -->
+      </nav>
+    <img id="menu-sp" src="images/hambarger.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <!-- スマホ用ナビゲーション -->
+    <nav id="nav-sp">
+      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="home.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img  id="logo2-sp"src="images/logo2.jpg" alt="トップページに戻る"></a>
+      <a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a>
+      <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Product</a>
+      <a class="menu" href="news.html" onclick="document.getElementById('nav-sp').style.display = 'none'">News</a>
+      <a class="menu" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a>
+    </nav>
+    </header>
+<main>
+  <!-- Contact -->
+  <section id="Contact"> 
+  <h1 class="title">Contact(お問い合わせ)</h1>
+   <div id="contactsentence"> 
+       <p>弊社へのお問い合わせは下記フォームより受け付けております。</p>
+       <p>確認後、折り返しご連絡させていただきます。 </p>
+   </div> 
+   <form>
+    <div>
+      <div class="contact-heading">
+        <label class="contact-label"
+          >お名前<span class="contact-span">必須</span></label
+        >
+      </div>
+      <div class="contact-form">
+        <input
+          type="text"
+          name="name"
+          placeholder="入力してください"
+          class="contact-textbox"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="contact-heading">
+        <label class="contact-label"
+          >フリガナ<span class="contact-span">必須</span></label
+        >
+      </div>
+      <div>
+        <input
+          type="text"
+          name="hurigana"
+          placeholder="入力してください"
+          class="contact-textbox"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="contact-heading">
+        <label class="contact-label"
+          >メールアドレス<span class="contact-span">必須</span></label
+        >
+      </div>
+      <div>
+        <input
+          type="text"
+          name="email"
+          placeholder="入力してください"
+          class="contact-textbox"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="contact-heading">
+        <label class="contact-label"
+          >お問い合わせ内容<span class="contact-span">必須</span></label
+        >
+      </div>
+      <div>
+        <textarea
+          class="contact-textarea"
+          name="message"
+        ></textarea>
+      </div>
+    </div>
+    <input type="submit" value="送信" class="buy"> 
+</form>
+</main>
+    <footer>
+      <div id="address">
+        <table> 
+          <tr> 
+            <td>会社名：</td> 
+            <td>株式会社Eco Shop</td> 
+          </tr>
+          <tr> 
+            <td>所在地：</td>
+            <td>〒000-0000　東京都港区芝公園0-0-0</td>
+          </tr>
+          <tr> 
+            <td>受付時間：</td>
+            <td>火曜日を除く 10：00〜18：00</td>
+          </tr>
+        </table> 
+         <!-- ロゴ -->
+         <a href="home.html" class="logo2"><img class="logo2"src= "images/logo2.jpg" alt="トップページに戻る"/></a>
+       </div>  
+         <!-- PC用ナビゲーション -->
+         <nav id="nav-pc">
+          <a href="about.html">About</a>
+          <a href="product.html">Product</a>
+          <a href="News.html">News</a>
+          <a href="contact.html">Contact</a>
+      </footer>
+</body>
